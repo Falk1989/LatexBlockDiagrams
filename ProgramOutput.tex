@@ -1,0 +1,24 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+
+\usetikzlibrary{shapes,shadows,arrows, decorations.pathmorphing}
+
+\begin{document}
+
+\tikzstyle{block} = [draw, rectangle, minimum height=2em, minimum width=4em]
+\tikzstyle{node} = [draw, fill=blue!20, circle, node distance=1cm]
+\begin{tikzpicture}
+
+\node [name=start] {$START$};
+\node [block,right of=start,node distance= 50.0mm] (block) {$BLOCK$};
+\node [right of=block, node distance = 50.0mm] (end) {$END$};
+\begin{scope}[->,decoration={post length=4pt},rounded corners=2mm]
+\draw [->,ultra thick] (start) -- (block);
+\draw [->,ultra thick] (block) -- (end);
+\end{scope}
+
+\end{tikzpicture}
+
+\end{document}
+

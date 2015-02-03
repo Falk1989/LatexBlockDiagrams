@@ -1,0 +1,9 @@
+draw_start start (41,1) "label la e la bestia loca";
+draw_BLOCk above_of start  (40.0) Block1 "Block1";
+draw_BLOCk above_of start  (40.0) Block1 "Block1";
+draw_BLOCk above_of start  (40.0) Block1 "Block1";
+draw_BLOCk right_of start  (40.0) Block1 "Block1";
+draw_BLOCk above_of start  (40.0) Block1 "Block1";
+draw_eNd right_of Block21  (60.0) end "finefine";
+draw_arrow start > Block1;
+draw_arrow Block2 < Block1;

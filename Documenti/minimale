@@ -1,0 +1,5 @@
+draw_start start "START";
+draw_block right_of start (50.0)  block "BLOCK";
+draw_end right of block (50.0) end "END";
+draw_arrow start >block;
+draw_arrow block > end;
